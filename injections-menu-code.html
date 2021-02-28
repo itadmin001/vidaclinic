@@ -1,0 +1,183 @@
+
+<div class="flex-container">
+  <div><button type="button" class="btn categoryButton showAllButton active" onclick="showAll()">Show All</button></div>
+  <div><button type="button" class="btn categoryButton wellnessButton" onclick="showWellness()">Wellness</button></div>
+  <div><button type="button" class="btn categoryButton athleticButton" onclick="showAthletic()">Athletic</button></div>
+  <div><button type="button" class="btn categoryButton beautyButton" onclick="showBeauty()">Beauty</button></div>
+  <div><button type="button" class="btn categoryButton antiAgingButton" onclick="showAntiAging()">Anti-Aging</button></div>
+  <div><button type="button" class="btn categoryButton mostPopularButton" onclick="showMostPopular()">Most Popular</button></div
+</div>
+
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+	function showWellness(){
+    [].forEach.call(document.querySelectorAll('.categoryButton'), function (el){
+      jQuery('.categoryButton').removeClass('active');
+    });
+    jQuery('.wellnessButton').addClass('active');
+    
+    [].forEach.call(document.querySelectorAll('.et_pb_row_4'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_5'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_6'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_7'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_8'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_9'), function (el){
+      el.style.display = 'none';
+    });
+   [].forEach.call(document.querySelectorAll('.et_pb_row_3'), function (el){
+      el.style.display = 'block';
+    });
+  }
+  function showAthletic(){
+    [].forEach.call(document.querySelectorAll('.categoryButton'), function (el){
+      jQuery('.categoryButton').removeClass('active');
+    });
+    jQuery('.athleticButton').addClass('active');
+    [].forEach.call(document.querySelectorAll('.et_pb_row_3'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_4'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_6'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_7'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_8'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_9'), function (el){
+      el.style.display = 'none';
+    });
+   [].forEach.call(document.querySelectorAll('.et_pb_row_5'), function (el){
+      el.style.display = 'block';
+    });
+  }
+  function showBeauty(){
+    [].forEach.call(document.querySelectorAll('.categoryButton'), function (el){
+      jQuery('.categoryButton').removeClass('active');
+    });
+    jQuery('.beautyButton').addClass('active');
+    [].forEach.call(document.querySelectorAll('.et_pb_row_3'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_4'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_5'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_6'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_7'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_8'), function (el){
+      el.style.display = 'none';
+    });
+   [].forEach.call(document.querySelectorAll('.et_pb_row_9'), function (el){
+      el.style.display = 'block';
+    });
+  }
+  function showAntiAging(){
+    [].forEach.call(document.querySelectorAll('.categoryButton'), function (el){
+      jQuery('.categoryButton').removeClass('active');
+    });
+    jQuery('.antiAgingButton').addClass('active');
+    
+    [].forEach.call(document.querySelectorAll('.et_pb_row_3'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_4'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_5'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_6'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_8'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_9'), function (el){
+      el.style.display = 'none';
+    });
+   [].forEach.call(document.querySelectorAll('.et_pb_row_7'), function (el){
+      el.style.display = 'block';
+    });
+  }
+  function showMostPopular(){
+    [].forEach.call(document.querySelectorAll('.categoryButton'), function (el){
+      jQuery('.categoryButton').removeClass('active');
+    });
+    jQuery('.mostPopularButton').addClass('active');
+   
+    [].forEach.call(document.querySelectorAll('.et_pb_row_3'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_4'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_5'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_6'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_7'), function (el){
+      el.style.display = 'none';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_8'), function (el){
+      el.style.display = 'none';
+    });
+   [].forEach.call(document.querySelectorAll('.et_pb_row_9'), function (el){
+      el.style.display = 'none';
+    });
+     [].forEach.call(document.querySelectorAll('.mostPopular'), function (el){
+      el.style.display = 'block';
+    });
+  }
+  function showAll(){
+    [].forEach.call(document.querySelectorAll('.categoryButton'), function (el){
+      jQuery('.categoryButton').removeClass('active');
+    });
+    jQuery('.showAllButton').addClass('active');
+    
+    [].forEach.call(document.querySelectorAll('.et_pb_row_4'), function (el){
+      el.style.display = 'block';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_5'), function (el){
+      el.style.display = 'block';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_6'), function (el){
+      el.style.display = 'block';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_7'), function (el){
+      el.style.display = 'block';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_8'), function (el){
+      el.style.display = 'block';
+    });
+    [].forEach.call(document.querySelectorAll('.et_pb_row_9'), function (el){
+      el.style.display = 'block';
+    });
+   [].forEach.call(document.querySelectorAll('.et_pb_row_3'), function (el){
+      el.style.display = 'block';
+    });
+  }
+</script>
